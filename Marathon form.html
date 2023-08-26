@@ -10,27 +10,43 @@
 
 <body>
     <h1>Race Registration</h1>
-
-    <p>
-        <label for="first">First name</label>
-        <input type="text" name="first" id="first" required>
-        <label for="last">Last name</label>
-        <input type="text" name="last" id="last" required>
-    </p>
-    <p>
-        Select a race:
-    </p>
-    <p>
-              
-        <input type="radio" name="funrun" id="funrun" value="funrun">
-        <label for="funrun"><b>Fun Run 5k</b></label>
-        <input type="radio" name="half" id="half" value="half">
-        <label for="funrun"><b>Half Marathon</b></label>
-        <input type="radio" name="full" id="full" value="full">
-        <label for="funrun"><b>Full Marathon</b></label>
-
-    </p>
-
+    <form action="/register">
+        <p>
+            <label for="first">First name</label>
+            <input type="text" name="firstname" id="first" required>
+            <label for="last">Last name</label>
+            <input type="text" name="lastname" id="last" required>
+        </p>
+        <p>
+            <b>Select a race:</b>
+        </p>
+        <p>
+            <input type="radio" name="race" id="funrun" value="funrun">
+            <label for="funrun"><b>Fun Run 5k</b></label><br>
+            <input type="radio" name="race" id="half" value="half">
+            <label for="funrun"><b>Half Marathon</b></label><br>
+            <input type="radio" name="race" id="full" value="full">
+            <label for="funrun"><b>Full Marathon</b></label><br>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </p>
+        <p>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="under18">Under 18</option>
+                <option value="18to30">18-30</option>
+                <option value="31to50">31-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </p>
+        <p>
+            <button>Register!</button>
+        </p>
+    </form>
 </body>
 
 </html>
