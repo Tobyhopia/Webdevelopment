@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marathon Registration <Form></Form></title>
+    <title>Marathon Registration <Form></Form>
+    </title>
 </head>
+
 <body>
     <h1>Race Registration</h1>
 
     <p>
         <label for="first">First name</label>
-        <input type="text" name="first" id="first"><br>
+        <input type="text" name="first" id="first" required>
         <label for="last">Last name</label>
-        <input type="text" name="last" id="last">
+        <input type="text" name="last" id="last" required>
     </p>
-    
-    
+    <p>
+        Select a race:
+    </p>
+    <p>
+              
+        <input type="radio" name="funrun" id="funrun" value="funrun">
+        <label for="funrun"><b>Fun Run 5k</b></label>
+        <input type="radio" name="half" id="half" value="half">
+        <label for="funrun"><b>Half Marathon</b></label>
+        <input type="radio" name="full" id="full" value="full">
+        <label for="funrun"><b>Full Marathon</b></label>
+
+    </p>
+
 </body>
+
 </html>
